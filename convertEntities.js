@@ -5,8 +5,6 @@ const convert = (str) => {
 		return str.replace(/\&([^;]+);/g, function (entity, entitycode) {
 			var match;
 			if (entitycode in (heList)) {
-				//console.log("if");
-				//console.log (entity + ": " + entitycode);
 				return (heList[entitycode]);
 			} 
 			else if (match = entity.match(/^#x([\da-fA-F]+)$/)) {
@@ -16,8 +14,6 @@ const convert = (str) => {
 			   return String.fromCharCode(~~match[1]);
 			} 
 			else {
-				//console.log("else");
-				//console.log (entity + ": " + entitycode);
 				return entity;
 			}
 		})

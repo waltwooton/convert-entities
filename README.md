@@ -5,4 +5,4 @@ Usage:
 
   const convertEntities = require ("../convertEntities/convertEntities");
   var stringWithEntities = "&quot;blah-blah-blah&quot;"
-  var cleanString = convertentities.convert(stringWithEntities)
+  var cleanString = convertentities.convert(stringWithEntities);

@@ -4,5 +4,7 @@ This node.js app was developed to clean up an RSS node with HTML within CDATA bl
 Usage:
 
   const convertEntities = require ("../convertEntities/convertEntities");
+
   var stringWithEntities = "&quot;blah-blah-blah&quot;"
+
   var cleanString = convertentities.convert(stringWithEntities);
